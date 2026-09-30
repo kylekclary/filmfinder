@@ -1,0 +1,17 @@
+# Letterboxd lists to scrape. Public lists only; max_films caps how far we paginate.
+lists:
+  - url: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
+    name: Letterboxd Top 250 Narrative Features
+    max_films: 30
+
+scrape:
+  delay_min_s: 1.0
+  delay_max_s: 2.0
+  max_retries: 4
+  reviews_per_film: 12
+
+# Relative paths resolve against the directory you run film-etl from.
+paths:
+  raw: data/raw
+  processed: data/processed
+  fixtures: tests/fixtures

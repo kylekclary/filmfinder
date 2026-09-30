@@ -1,0 +1,18 @@
+# Pipeline data: HTTP cache and outputs are regenerated. data/sample/ stays tracked.
+data/raw/
+data/processed/
+
+# Secrets
+.env
+
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
