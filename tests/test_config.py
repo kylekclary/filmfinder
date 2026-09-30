@@ -23,6 +23,7 @@ def test_loads_yaml_with_api_keys_absent(tmp_path: Path) -> None:
     assert not settings.has_tmdb
     assert len(settings.lists) == 1
     assert settings.lists[0].max_films == 30
+    assert settings.scrape.contact.startswith("https://")
     assert settings.scrape.delay_min_s == 1.0
     assert settings.scrape.delay_max_s == 2.0
     assert settings.scrape.max_retries == 4

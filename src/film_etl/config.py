@@ -21,6 +21,7 @@ class ListSource:
 
 @dataclass(frozen=True, slots=True)
 class ScrapeSettings:
+    contact: str
     delay_min_s: float
     delay_max_s: float
     max_retries: int
@@ -75,6 +76,7 @@ def _parse_lists(items: list[dict[str, Any]]) -> tuple[ListSource, ...]:
 
 def _parse_scrape(section: dict[str, Any]) -> ScrapeSettings:
     return ScrapeSettings(
+        contact=str(section["contact"]),
         delay_min_s=float(section["delay_min_s"]),
         delay_max_s=float(section["delay_max_s"]),
         max_retries=int(section["max_retries"]),

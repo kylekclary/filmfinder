@@ -5,6 +5,8 @@ lists:
     max_films: 30
 
 scrape:
+  # Sent in the User-Agent so site operators can reach whoever runs the scraper.
+  contact: https://github.com/kylekclary/filmfinder
   delay_min_s: 1.0
   delay_max_s: 2.0
   max_retries: 4
