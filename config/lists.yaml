@@ -1,7 +1,7 @@
 # Letterboxd lists to scrape. Public lists only; max_films caps how far we paginate.
 lists:
-  - url: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
-    name: Letterboxd Top 250 Narrative Features
+  - url: https://letterboxd.com/official/list/letterboxds-top-500-films/
+    name: Letterboxd's Top 500 Films
     max_films: 30
 
 scrape:

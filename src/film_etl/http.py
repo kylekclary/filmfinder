@@ -105,22 +105,25 @@ class HttpClient:
 
 
 class FixtureClient:
-    """Offline stand-in for HttpClient: replays files listed in <fixtures>/manifest.json."""
+    """Offline stand-in for HttpClient: replays files listed in <fixtures>/manifest.json.
+
+    Manifest shape: {cache_key: {"path": relative_path, "synthetic": bool}}.
+    """
 
     def __init__(self, fixtures_dir: Path) -> None:
         self._fixtures_dir = fixtures_dir
         manifest_path = fixtures_dir / "manifest.json"
-        self._manifest: dict[str, str] = (
+        self._manifest: dict[str, dict[str, Any]] = (
             json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
         )
 
     def get_text(self, url: str, params: Params = None) -> str | None:
         key = cache_key(url, params)
-        relative_path = self._manifest.get(key)
-        if relative_path is None:
+        entry = self._manifest.get(key)
+        if entry is None:
             logger.debug("no fixture for %s", key)
             return None
-        return (self._fixtures_dir / relative_path).read_text(encoding="utf-8")
+        return (self._fixtures_dir / entry["path"]).read_text(encoding="utf-8")
 
     def get_json(
         self, url: str, params: Params = None, headers: dict[str, str] | None = None

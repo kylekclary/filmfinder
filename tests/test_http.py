@@ -125,7 +125,9 @@ def test_connection_error_returns_none_without_leaking_secret(
 def test_fixture_client_reads_from_manifest(tmp_path: Path) -> None:
     (tmp_path / "omdb").mkdir()
     (tmp_path / "omdb" / "tt6751668.json").write_text('{"Title": "Parasite"}', encoding="utf-8")
-    manifest = {cache_key(OMDB_URL, {"i": "tt6751668"}): "omdb/tt6751668.json"}
+    manifest = {
+        cache_key(OMDB_URL, {"i": "tt6751668"}): {"path": "omdb/tt6751668.json", "synthetic": True}
+    }
     (tmp_path / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
 
     client = FixtureClient(tmp_path)

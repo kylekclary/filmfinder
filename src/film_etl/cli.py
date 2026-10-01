@@ -6,7 +6,9 @@ from typing import Annotated
 
 import typer
 
-from film_etl.config import DEFAULT_CONFIG_PATH
+from film_etl.capture import capture_fixtures, fixtures_size
+from film_etl.config import DEFAULT_CONFIG_PATH, load_settings
+from film_etl.http import HttpClient
 
 logger = logging.getLogger(__name__)
 
@@ -73,3 +75,24 @@ def load(
 ) -> None:
     """Write transformed tables to SQLite and Parquet/CSV."""
     _not_implemented("load", config, offline, verbose)
+
+
+@app.command("capture-fixtures")
+def capture_fixtures_command(
+    list_url: Annotated[
+        str | None,
+        typer.Option(
+            "--list-url", help="Letterboxd list to sample. Default: first list in config."
+        ),
+    ] = None,
+    films: Annotated[int, typer.Option("--films", min=1, help="How many films to capture.")] = 10,
+    config: ConfigOption = DEFAULT_CONFIG_PATH,
+    verbose: VerboseOption = False,
+) -> None:
+    """Fetch a small live sample of every source into tests/fixtures/."""
+    _configure_logging(verbose)
+    settings = load_settings(config)
+    client = HttpClient(settings.scrape, settings.paths.raw)
+    writer = capture_fixtures(client, settings, list_url or settings.lists[0].url, films)
+    total_kb = fixtures_size(settings.paths.fixtures) // 1000
+    typer.echo(f"Wrote {len(writer.written)} fixtures; {settings.paths.fixtures} is {total_kb} KB.")

@@ -1,0 +1,94 @@
+{
+  "GET https://api.themoviedb.org/3/find/tt0056058?external_source=imdb_id": {
+    "path": "tmdb/find_tt0056058.json",
+    "synthetic": true
+  },
+  "GET https://api.themoviedb.org/3/find/tt0111161?external_source=imdb_id": {
+    "path": "tmdb/find_tt0111161.json",
+    "synthetic": true
+  },
+  "GET https://api.themoviedb.org/3/movie/14537?append_to_response=keywords%2Creviews": {
+    "path": "tmdb/movie_14537.json",
+    "synthetic": true
+  },
+  "GET https://api.themoviedb.org/3/movie/278?append_to_response=keywords%2Creviews": {
+    "path": "tmdb/movie_278.json",
+    "synthetic": true
+  },
+  "GET https://letterboxd.com/csi/film/harakiri/rating-histogram/": {
+    "path": "letterboxd/csi_harakiri_rating-histogram.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/csi/film/harakiri/stats/": {
+    "path": "letterboxd/csi_harakiri_stats.html",
+    "synthetic": true
+  },
+  "GET https://letterboxd.com/example/list/legacy-markup/": {
+    "path": "letterboxd/list_legacy.html",
+    "synthetic": true
+  },
+  "GET https://letterboxd.com/film/12-angry-men/": {
+    "path": "letterboxd/film_12-angry-men.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/city-of-god/": {
+    "path": "letterboxd/film_city-of-god.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/come-and-see/": {
+    "path": "letterboxd/film_come-and-see.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/harakiri/": {
+    "path": "letterboxd/film_harakiri.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/high-and-low/": {
+    "path": "letterboxd/film_high-and-low.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/seven-samurai/": {
+    "path": "letterboxd/film_seven-samurai.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/the-godfather-part-ii/": {
+    "path": "letterboxd/film_the-godfather-part-ii.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/the-human-condition-i-no-greater-love/": {
+    "path": "letterboxd/film_the-human-condition-i-no-greater-love.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/the-human-condition-iii-a-soldiers-prayer/": {
+    "path": "letterboxd/film_the-human-condition-iii-a-soldiers-prayer.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/film/the-shawshank-redemption/": {
+    "path": "letterboxd/film_the-shawshank-redemption.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/official/list/letterboxds-top-500-films/": {
+    "path": "letterboxd/list_page1.html",
+    "synthetic": false
+  },
+  "GET https://letterboxd.com/official/list/letterboxds-top-500-films/page/2/": {
+    "path": "letterboxd/list_page2.html",
+    "synthetic": false
+  },
+  "GET https://query.wikidata.org/sparql?format=json&query=SELECT+%3Fitem+%3Fimdb+%3Fbudget+%3FbudgetUnit+%3FboxOffice+%3FboxOfficeUnit+WHERE+%7B%0A++VALUES+%3Fimdb+%7B+%22tt0056058%22+%22tt0055233%22+%22tt0050083%22+%22tt0091251%22+%22tt0057565%22+%22tt0047478%22+%22tt0111161%22+%22tt0071562%22+%22tt0053114%22+%22tt0317248%22+%7D%0A++%3Fitem+wdt%3AP345+%3Fimdb+.%0A++OPTIONAL+%7B+%3Fitem+p%3AP2130%2Fpsv%3AP2130+%5B+wikibase%3AquantityAmount+%3Fbudget%3B+wikibase%3AquantityUnit+%3FbudgetUnit+%5D+.+%7D%0A++OPTIONAL+%7B+%3Fitem+p%3AP2142%2Fpsv%3AP2142+%5B+wikibase%3AquantityAmount+%3FboxOffice%3B+wikibase%3AquantityUnit+%3FboxOfficeUnit+%5D+.+%7D%0A%7D": {
+    "path": "wikidata/money_batch.json",
+    "synthetic": false
+  },
+  "GET https://www.omdbapi.com/?i=tt0000000": {
+    "path": "omdb/tt0000000.json",
+    "synthetic": true
+  },
+  "GET https://www.omdbapi.com/?i=tt0056058": {
+    "path": "omdb/tt0056058.json",
+    "synthetic": true
+  },
+  "GET https://www.omdbapi.com/?i=tt0111161": {
+    "path": "omdb/tt0111161.json",
+    "synthetic": true
+  }
+}

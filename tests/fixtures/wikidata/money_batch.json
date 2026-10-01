@@ -1,0 +1,410 @@
+{
+  "head": {
+    "vars": [
+      "item",
+      "imdb",
+      "budget",
+      "budgetUnit",
+      "boxOffice",
+      "boxOfficeUnit"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4659647"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0055233"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q110818465"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0053114"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q2345"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0050083"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "340000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q172241"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "28767189"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "25000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0111161"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q172241"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "28817291"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "25000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0111161"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q184768"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "47960085"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "13000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0071562"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q184768"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "47834595"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "13000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0071562"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q189540"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "268230000"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q8146"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "210000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q8146"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0047478"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q220741"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "30680793"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "3300000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0317248"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q220741"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "10300000"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "3300000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0317248"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q220741"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "7564459"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "3300000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0317248"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q244878"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "460200000"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q8146"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "230000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q8146"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0057565"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1130395"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "20929648"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "5000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0091251"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1130395"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "71909"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "5000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0091251"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1130395"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "20760251"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "budget": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "5000000"
+        },
+        "budgetUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0091251"
+        }
+      },
+      {
+        "item": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1584406"
+        },
+        "boxOffice": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+          "type": "literal",
+          "value": "15000"
+        },
+        "boxOfficeUnit": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q4917"
+        },
+        "imdb": {
+          "type": "literal",
+          "value": "tt0056058"
+        }
+      }
+    ]
+  }
+}
